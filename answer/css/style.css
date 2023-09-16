@@ -1,0 +1,8 @@
+.amount{
+    text-align: right;
+}
+
+.amount::before {
+    content: "Rp. ";
+    float: left;
+}
