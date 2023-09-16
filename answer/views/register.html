@@ -21,42 +21,45 @@
 
 <!-- Submit Form -->
 <div class="ms-3 mt-3">
-    <div class="row g-3 align-items-center pb-4">
+  <div class="row g-3 align-items-center pb-4">
+    <div class="col-auto">
+      <input type="text" id="name" placeholder="Nama Lengkap" class="form-control" aria-describedby="passwordHelpInline">
+    </div>
+    <div class="col-auto">
+      <span id="passwordHelpInline" class="form-text">
+          Minimal 10 Karakter
+      </span>
+    </div>
+  </div>
+  <div class="row g-3 align-items-center pb-4">
       <div class="col-auto">
-        <input type="text" id="name" placeholder="Nama" class="form-control" aria-describedby="passwordHelpInline">
+        <input type="number" id="age" placeholder="Umur" class="form-control" aria-describedby="passwordHelpInline">
       </div>
       <div class="col-auto">
         <span id="passwordHelpInline" class="form-text">
-           Minimal 10 Karakter
+            Minimal 25 Tahun
         </span>
       </div>
     </div>
     <div class="row g-3 align-items-center pb-4">
-        <div class="col-auto">
-          <input type="number" id="name" placeholder="Umur" class="form-control" aria-describedby="passwordHelpInline">
-        </div>
-        <div class="col-auto">
-          <span id="passwordHelpInline" class="form-text">
-             Minimal 25 Tahun
-          </span>
-        </div>
+      <div class="col-auto">
+        <input type="number" id="allowance" placeholder="Uang Sangu" class="form-control" aria-describedby="passwordHelpInline">
       </div>
-      <div class="row g-3 align-items-center pb-4">
-        <div class="col-auto">
-          <input type="number" id="allowance" placeholder="Uang Sangu" class="form-control" aria-describedby="passwordHelpInline">
-        </div>
-        <div class="col-auto">
-          <span id="passwordHelpInline" class="form-text">
-             Minimal Rp. 100.000 dan Maksimal Rp. 1.000.000
-          </span>
-        </div>
+      <div class="col-auto">
+        <span id="passwordHelpInline" class="form-text">
+            Minimal Rp. 100.000 dan Maksimal Rp. 1.000.000
+        </span>
       </div>
-<button id="submitButton" class="btn btn-primary">Submit</button>
-
+    </div>
+  <button id="submitButton" class="btn btn-primary">Submit</button>
+  <div id="alertpart"></div>
 </div>
 <!-- End of Submit Form -->
 
-    <!-- Script CSS -->
+    <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script></body>
+
+    <!-- Custom Script -->
+    <script src="../js/register_function.js"></script>
 </html>
