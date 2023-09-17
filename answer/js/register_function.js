@@ -63,7 +63,7 @@ btn.addEventListener('click', function() {
     } 
     if (allowanceValue < 100000 || allowanceValue > 1000000) {
         document.getElementById('allowance').value = '';
-        failAlert('Uang Sangu');
+        failAlert('Jumlah Uang Sangu');
         return;
     }
 
